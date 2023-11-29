@@ -96,7 +96,7 @@ def load_data(city, month, day):
  
  
 def log_time_spent(startTime):
-    """Display the time spent. For readability, it is highlighted to miliseconds."""
+    """Display the time spent. For readability, it is highlighted to ms."""
     spentTime = str(time.time() - startTime)
     highlightedSpentTime = "\033[1;37m" + spentTime[:5] + "\033[0m" + spentTime[5:]
     print("\nThis took " + highlightedSpentTime + " seconds.")
