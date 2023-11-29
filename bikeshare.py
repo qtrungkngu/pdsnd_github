@@ -1,6 +1,6 @@
 import time
 import pandas as pd
-import numpy as np
+
  
 """
 define value global of 3 cities
@@ -39,9 +39,12 @@ def input_data(promptMsg, validData):
     return rslt
  
  
-def print_horizontal_line():
-    """Print a horizontal line with symbol `=`."""
-    print('=' * 40)
+def print_horizontal_line(length=40):
+    """Print a horizontal line with symbol `=`.
+    Args:
+        length (int, opional): length of line, Defauls to 40.
+    """
+    print('=' * length)
  
  
 def get_filters():
