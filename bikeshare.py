@@ -2,7 +2,9 @@ import time
 import pandas as pd
 import numpy as np
  
- 
+"""
+define value global of 3 cities
+"""
 CITY_DATA = {
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
@@ -37,9 +39,9 @@ def input_data(promptMsg, validData):
     return rslt
  
  
-def print_horizontal_line():
-    """Print a horizontal line."""
-    print('=' * 40)
+def print_horizontal_line(length=40):
+    """Print a horizontal line with symbol `=`."""
+    print('=' * length)
  
  
 def get_filters():
@@ -94,7 +96,7 @@ def load_data(city, month, day):
  
  
 def log_time_spent(startTime):
-    """Display the time spent. For readability, it is highlighted to miliseconds."""
+    """Display the time spent. For readability, it is highlighted to ms."""
     spentTime = str(time.time() - startTime)
     highlightedSpentTime = "\033[1;37m" + spentTime[:5] + "\033[0m" + spentTime[5:]
     print("\nThis took " + highlightedSpentTime + " seconds.")
@@ -151,7 +153,7 @@ def station_stats(df):
  
  
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and avg trip duration."""
  
     print('\nCalculating Trip Duration...\n')
     startTime = time.time()
