@@ -2,7 +2,9 @@ import time
 import pandas as pd
 import numpy as np
  
- 
+"""
+define value global of 3 cities
+"""
 CITY_DATA = {
     'chicago': 'chicago.csv',
     'new york city': 'new_york_city.csv',
