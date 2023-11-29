@@ -38,7 +38,7 @@ def input_data(promptMsg, validData):
  
  
 def print_horizontal_line():
-    """Print a horizontal line."""
+    """Print a horizontal line with symbol `=`."""
     print('=' * 40)
  
  
