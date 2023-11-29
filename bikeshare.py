@@ -40,7 +40,10 @@ def input_data(promptMsg, validData):
  
  
 def print_horizontal_line(length=40):
-    """Print a horizontal line with symbol `=`."""
+    """Print a horizontal line with symbol `=`.
+    Args:
+        length (int, opional): length of line, Defauls to 40.
+    """
     print('=' * length)
  
  
